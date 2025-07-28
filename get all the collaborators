@@ -7,6 +7,8 @@ API_URL="https://api.github.com"
 USERNAME=$username
 TOKEN=$token
 
+helper()
+
 # User and Repository information
 REPO_OWNER=$1
 REPO_NAME=$2
@@ -35,6 +37,13 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
+
+function helper {
+ expected_two2
+if [ $# -ne expected_cmd ]; then
+echo "You are expected two arguments"
+}
+
 
 # Main script
 
